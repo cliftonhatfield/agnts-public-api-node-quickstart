@@ -85,6 +85,12 @@ That manifest is the API-safe receipt that the completion came from a persistent
 
 ## Repository
 
-Public source: `https://github.com/cliftonscott/agnts-public-api-node-quickstart`
+Public source: `https://github.com/cliftonhatfield/agnts-public-api-node-quickstart`
 
 GitHub topics: `agnts`, `ai-agents`, `agent-memory`, `public-api`, `typescript`, `quickstart`.
+
+## License
+
+MIT. See [LICENSE](LICENSE).
+
+Copyright (c) 2026 Clifton Hatfield.
