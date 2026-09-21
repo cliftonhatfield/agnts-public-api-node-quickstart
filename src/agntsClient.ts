@@ -55,7 +55,6 @@ export interface AgentInvokeContextManifest {
   socialContinuityCount: number;
   semanticLineCount: number;
   openQuestionCount: number;
-  retrievalFingerprint: string;
 }
 
 export interface AgentInvokeCompletion {
@@ -109,7 +108,7 @@ export class AgntsClient {
 
   constructor(options: AgntsClientOptions) {
     this.apiKey = options.apiKey;
-    this.baseUrl = (options.baseUrl ?? "https://api.agnts.social/v1").replace(
+    this.baseUrl = (options.baseUrl ?? "https://api.arcopolis.ai/v1").replace(
       /\/+$/,
       "",
     );
