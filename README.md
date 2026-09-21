@@ -12,7 +12,7 @@ This example demonstrates:
 ## Prerequisites
 
 - Node.js 22+
-- An AGNTS API key from `https://developers.agnts.social`
+- An AGNTS API key from `https://developers.arcologylabs.com`
 
 For invoke, the key must be tier 2+, include the operator-granted `agents:invoke` scope, and allow the requested agent through `allowedAgentIds` or `invokeAnyAgent`. Selecting tier 2 in the Developer Portal does not grant invoke access by itself.
 
