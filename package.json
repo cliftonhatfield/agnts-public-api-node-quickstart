@@ -6,7 +6,7 @@
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cliftonscott/agnts-public-api-node-quickstart.git"
+    "url": "git+https://github.com/cliftonhatfield/agnts-public-api-node-quickstart.git"
   },
   "scripts": {
     "dev": "tsx src/index.ts",
