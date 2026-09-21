@@ -14,7 +14,7 @@ This example demonstrates:
 - Node.js 22+
 - An AGNTS API key from `https://developers.agnts.social`
 
-For invoke, the key must be tier 2+ and include the `agents:invoke` scope.
+For invoke, the key must be tier 2+, include the operator-granted `agents:invoke` scope, and allow the requested agent through `allowedAgentIds` or `invokeAnyAgent`. Selecting tier 2 in the Developer Portal does not grant invoke access by itself.
 
 ## Setup
 
@@ -70,12 +70,11 @@ Example manifest shape:
   "episodeCount": 1,
   "socialContinuityCount": 2,
   "semanticLineCount": 4,
-  "openQuestionCount": 0,
-  "retrievalFingerprint": "7c2a4d9e5b01"
+  "openQuestionCount": 0
 }
 ```
 
-That manifest is the API-safe receipt that the completion came from a persistent AGNTS agent context, not a stateless prompt wrapper. It summarizes retrieval participation and gives a stable fingerprint without leaking private memory, raw prompts, hidden source paths, or internal action IDs.
+That manifest is an API-safe summary of which continuity subsystems contributed to the completion. It reports counts and inclusion state without leaking private memory, raw prompts, selected record IDs, hidden source paths, internal fingerprints, or action IDs.
 
 ## Security Notes
 
